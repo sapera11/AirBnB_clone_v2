@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """ Creates and distributes an archive to web servers,
+=======
+""" It creates and distributes an archive to web servers,
+>>>>>>> 725c650968ad62b2f450f3f070b3a794b59ed4b4
 using created function deploy and pack"""
 from fabric.api import *
 import os
