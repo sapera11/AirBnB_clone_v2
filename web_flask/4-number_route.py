@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """A script that starts a Flask web application"""
 from flask import Flask
 
@@ -30,6 +31,11 @@ def display_pythonText(text='is cool'):
     if text != 'is cool':
         text = text.replace('_', ' ')
     return 'Python %s' % (text)
+
+
+@app.route('/number/<int:n>', strict_slashes=False)
+def display_if_int(n):
+    return '%d is a number' % (n)
 
 
 if __name__ == '__main__':
